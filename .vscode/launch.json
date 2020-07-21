@@ -6,9 +6,9 @@
   "configurations": [
     {
       "type": "java",
-      "name": "CodeLens (Launch) - RenderEngine",
+      "name": "CodeLens (Launch) - renderEngine",
       "request": "launch",
-      "mainClass": "RenderEngine",
+      "mainClass": "RenderEngine.renderEngine",
       "projectName": "3dRenderEngine_6e37fae9"
     },
     {
@@ -16,6 +16,13 @@
       "name": "Debug (Launch) - Current File",
       "request": "launch",
       "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch)-renderEngine<3dRenderEngine_6e37fae9>",
+      "request": "launch",
+      "mainClass": "renderEngine",
+      "projectName": "3dRenderEngine_6e37fae9"
     }
   ]
 }

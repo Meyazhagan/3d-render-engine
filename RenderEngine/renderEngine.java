@@ -11,7 +11,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.awt.image.BufferedImage;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.JFrame;
@@ -40,25 +39,15 @@ public class renderEngine
         Container pane = frame.getContentPane();
         pane.setLayout(new BorderLayout());
 
-        // slider to control horizontal rotation
-//        JSlider headingSlider = new JSlider(-180, 180, 0);
-//        pane.add(headingSlider, BorderLayout.SOUTH);
-//
-        // slider to control vertical rotation
-//        JSlider pitchSlider = new JSlider(SwingConstants.VERTICAL, -90, 90, 0);
-//        pane.add(pitchSlider, BorderLayout.EAST);
-//
-//        // slider to control roll
-//        JSlider rollSlider = new JSlider(SwingConstants.VERTICAL, -90, 90, 0);
-//        pane.add(rollSlider, BorderLayout.WEST);
-
         // slider to control FoV
         JSlider FoVSlider = new JSlider(1, 179, 100);
         pane.add(FoVSlider, BorderLayout.NORTH);
 
         // panel to display render results
         renderPanel = new JPanel() {
-                public void paintComponent(Graphics g) {
+            private static final long serialVersionUID = 1L;
+
+            public void paintComponent(Graphics g) {
                     Graphics2D g2 = (Graphics2D) g;
                     g2.setColor(Color.black);
                     g2.fillRect(0, 0, getWidth(), getHeight());
@@ -184,13 +173,10 @@ public class renderEngine
         button.addItemListener(ml);
         pane.add(button, BorderLayout.SOUTH);
 
-//        headingSlider.addChangeListener(e -> renderPanel.repaint());
-//        pitchSlider.addChangeListener(e -> renderPanel.repaint());
-//        rollSlider.addChangeListener(e -> renderPanel.repaint());
         FoVSlider.addChangeListener(e -> renderPanel.repaint());
 
         frame.setSize(600, 500);
-        frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
        
@@ -219,17 +205,9 @@ public class renderEngine
     
     class MouseData implements MouseMotionListener, MouseListener, ItemListener
     {
-//    	public MouseData(renderEngine e){
-//    		
-//    	}
     	@Override
     	public void mouseDragged(MouseEvent e)
     	{
-//    		headingSlider = (lastX - e.getX()) % 360;
-//    		pitchSlider = (lastY - e.getY()) % 360;
-//    		renderPanel.repaint();
-//    		
-//    		System.out.println("x - " + headingSlider + " y - " + pitchSlider);
     	}
 
     	@Override
@@ -237,11 +215,9 @@ public class renderEngine
     	{
     		if(rotateFlag) {
 	    		headingSlider = (lastX - e.getX()) % 360;
-	    		pitchSlider = (lastY - e.getY()) % 180;
+	    		pitchSlider = (lastY - e.getY()) % 360;
 	    		renderPanel.repaint();
-	    		
-	    		System.out.println("x - " + headingSlider + " y - " + pitchSlider);
-    		}
+	    	}
     	}
 
     	@Override
