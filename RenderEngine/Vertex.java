@@ -1,4 +1,4 @@
-package practices;
+package RenderEngine;
 
 public class Vertex {
     double x;

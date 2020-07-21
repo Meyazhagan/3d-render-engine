@@ -1,4 +1,4 @@
-package practices;
+package RenderEngine;
 
 import java.awt.Color;
 
