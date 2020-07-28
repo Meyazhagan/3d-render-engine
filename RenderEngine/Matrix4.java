@@ -19,11 +19,11 @@ public class Matrix4 {
     }
     Vertex transform(Vertex in) {
         return new Vertex(
-                          in.x * values[0] + in.y * values[4] + in.z * values[8] + in.w * values[12],
-                          in.x * values[1] + in.y * values[5] + in.z * values[9] + in.w * values[13],
-                          in.x * values[2] + in.y * values[6] + in.z * values[10] + in.w * values[14],
-                          in.x * values[3] + in.y * values[7] + in.z * values[11] + in.w * values[15]
-                          );
+            in.x * values[0] + in.y * values[4] + in.z * values[8] + in.w * values[12],
+            in.x * values[1] + in.y * values[5] + in.z * values[9] + in.w * values[13],
+            in.x * values[2] + in.y * values[6] + in.z * values[10] + in.w * values[14],
+            in.x * values[3] + in.y * values[7] + in.z * values[11] + in.w * values[15]
+            );
     }
     @Override public String toString() {
         StringBuilder sb = new StringBuilder();
