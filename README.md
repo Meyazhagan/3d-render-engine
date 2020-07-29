@@ -1,8 +1,10 @@
 # 3dRenderEngine
  3D Render Engine using Swing
 
+---
+
 ## 3D Scaling
-![](images/3d-square-scaling.gif)
+![3d scaling](images/3d-square-scaling.gif)
 
 ## 3D Rotation
 ![](images/3d-square-rotating.gif)
