@@ -13,7 +13,7 @@ public class Geomentry
       tris.add(new Triangle(new Vertex(-100, 100, 100, 1),
                             new Vertex(100, 100, 100, 1),
                             new Vertex(-100, 100, -100, 1),
-                            Color.WHITE));
+                            Color.RED));
       //B
       tris.add(new Triangle(new Vertex(100, 100, 100, 1),
                             new Vertex(100, 100, -100, 1),
@@ -23,53 +23,53 @@ public class Geomentry
       tris.add(new Triangle(new Vertex(100, -100, 100, 1),
                             new Vertex(100, 100, -100, 1),
                             new Vertex(100, 100, 100, 1),
-                            Color.WHITE));
+                            Color.BLUE));
       //D
       tris.add(new Triangle(new Vertex(100, -100, 100, 1),
                             new Vertex(100, -100, -100, 1),
                             new Vertex(100, 100, -100, 1),
-                            Color.WHITE));
+                            Color.GREEN));
       //E
       tris.add(new Triangle(new Vertex(-100, -100, 100, 1),
                             new Vertex(100, -100, 100, 1),
                             new Vertex(-100, 100, 100, 1),
-                            Color.WHITE));
+                            Color.ORANGE));
 
       //F
       tris.add(new Triangle(new Vertex(100, -100, 100, 1),
                             new Vertex(100, 100, 100, 1),
                             new Vertex(-100, 100, 100, 1),
-                            Color.WHITE));
+                            Color.DARK_GRAY));
       //G
       tris.add(new Triangle(new Vertex(-100, -100, 100, 1),
                             new Vertex(-100, 100, 100, 1),
                             new Vertex(-100, -100, -100, 1),
-                            Color.WHITE));
+                            Color.CYAN));
       //H
       tris.add(new Triangle(new Vertex(-100, 100, 100, 1),
                             new Vertex(-100, 100, -100, 1),
                             new Vertex(-100, -100, -100, 1),
-                            Color.WHITE));
+                            Color.GRAY));
       //I
       tris.add(new Triangle(new Vertex(-100, 100, -100, 1),
                             new Vertex(100, 100, -100, 1),
                             new Vertex(-100, -100, -100, 1),
-                            Color.WHITE));
+                            Color.MAGENTA));
       //J
       tris.add(new Triangle(new Vertex(-100, -100, -100, 1),
                             new Vertex(100, 100, -100, 1),
                             new Vertex(100, -100, -100, 1),
-                            Color.WHITE));
+                            Color.PINK));
       //K
       tris.add(new Triangle(new Vertex(100, -100, 100, 1),
                             new Vertex(-100, -100, 100, 1),
                             new Vertex(-100, -100, -100, 1),
-                            Color.WHITE));
+                            Color.YELLOW));
       //L
       tris.add(new Triangle(new Vertex(-100, -100, -100, 1),
                             new Vertex(100, -100, -100, 1),
                             new Vertex(100, -100, 100, 1),
-                            Color.WHITE));
+                            Color.LIGHT_GRAY));
 
 		return tris;
 	}
