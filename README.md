@@ -2,7 +2,7 @@
  3D Render Engine using Swing
 
 ## 3D Scaling
-<img src="images/3d-square-scaling.gif" weigth = "100"></img>
+<img src="images/3d-square-scaling.gif" weigth = "10"></img>
 
 ## 3D Rotation
 ![](images/3d-square-rotating.gif)
