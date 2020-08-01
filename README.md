@@ -9,7 +9,7 @@
 ## 3D Rotation
 ![](images/3d-square-rotating.gif)
 
-## Square implemented by combaining of triangles
+## Square implemented by combaining triangles
 ![](images/3d-square-form.gif)
 
 ## 3D Triangle
